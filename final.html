@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 함수 선언 방식
+        
+        function myFunction(p1, p2) {
+            return p1 * p2;   // The function returns the product of p1 and p2
+        }
+        
+        //anomy 방식
+        //const x = function myFunction(p1, p2){return a*b};
+
+        //const z = (x,y) => {};
+        //hoisting : 변수 또는 함수 선언을 자바스크립트 단위로 이동함
+        
+        alert(mul(10,3));
+        //alert(add(10,10));에러, 함수 선언 전에 호출됨
+
+        function mul(a,b)
+        {
+            return a*b;
+        }
+
+        //arrow function
+        const add = (x,y) => {
+            return x+y;
+        }
+        alert(add(10,10));
+
+        //alert(x(5,5)); 에러, 함수 선언 전에 호출됨
+        const x = function myFunction(p1, p2){return p1*p2};
+        alert(x(5,5));
+        */
+
+        let data = [['2021년 9월', '작은도서관 봉사', '책 읽어주기'],
+                    ['2021년 10월', '어르신 돌봄', '-'],
+                    ['2021년 11월', '학교 도서관', '도서 정리']];
+
+        //${data[0][0]}
+        function print()
+        {
+            let text = '';
+            text = `<table border = '1' width = '40%'>`;
+            for(let i = 0; i < data.length; i++)
+            {
+                text += `<tr><td>${data[i][0]}</td><td>${data[i][1]}</td><td>${data[i][2]}</td></tr>`;
+            }
+            text += `</table>`;
+
+            document.getElementById("test").innerHTML = text;
+        }
+        
+        function action()
+        {
+            //입력받아서 해보기
+            data.push([document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value]); //배열에 추가
+            print();
+        }
+        //html 코드를 가지고 dom tree 생성하기 문제
+    </script>
+</head>
+<body>
+    <!-- dom 만들어지기 전에 script 하면문제가 된다.-->
+    <div id="test">
+
+    </div>
+    일자 : <input type="text" name="" id="a" onfocus="this.style.background='yellow'" onblur="this.style.background = 'white'"><br>
+    장소 : <input type="text" name="" id="b" onfocus="this.style.background='yellow'" onblur="this.style.background = 'white'"><br>
+    내용 : <input type="text" name="" id="c" onfocus="this.style.background='yellow'" onblur="this.style.background = 'white'">
+    <br>
+    <button onclick="print()">클릭</button>
+    <button onclick="action()">대외활동</button>
+    <!-- api geolocation drag&drop 중에 한 개
+    appendchild removechild dom에 해당하는 내용-->
+</body>
+</html>

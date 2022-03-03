@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style5.css">
+    <!--인터넷 css,js 스타일-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script 
+    src = "http://kit.fontawesome.com/2d323a629b.js"></script>
+    <script type="text/javascript" src="myjs5.js"></script> 
+    <title>0UO│당신을 위한 공유오피스</title>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0; height: 100%; width: fit-content;z-index:4" id="rightMenu">
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>      
+            <table border="0">
+                <tr>
+                <td>이름</td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="text" name="name" maxlength="45" size="30" />
+                </td>
+            </tr>
+            <tr>
+            <td>전화번호</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="phone" maxlength="50" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Add Data" />
+                </td>
+                </tr>
+            </table>
+    </div>
+     <!----><!----><!--네비--><!----><!---->
+  <nav class="navbar">
+    <!--네비 로고그림-->
+    <div class="navbar_logo">
+        <a href="main.html">
+            <img src="./img/logo.png" alt="logo" width="300px" height= "60px" class="logo">
+        </a>
+    </div>
+    <!--네비 메뉴-->
+        <p class="navbar_menu">
+            <span><a href="./office_int.html" style="color: black; font-weight:bold">오피스 소개</a></span>
+            <span><a href="./plan.html" style="color: black; font-weight:bold">플랜&가격</a></span>
+            <span><a href="./community.html" style="color: black; font-weight:bold">커뮤니티</a></span>
+            <span><a href="./about.html" style="color: black; font-weight:bold">ABOUT</a></span>
+            <button class = "navbar_but" type = "button" onclick = "openRightMenu()">연락 및 문의</button>
+        </p>
+    </nav>
+    <!--섹션 이미지와 글-->
+    <section class = "search">
+        <img src="./img/office.jpg" class = "search_img" alt="search" width="1920px" height="700px" >
+        <p class = "search_word1" style="font-weight:bold">Let's Make Work Better</p>
+        <p class = "search_word2">
+            제로유는 당신의 업무에 필요한 오피스를 제공해 드립니다.<br>
+            비즈니스 형태와 규모에 관계없이 제로유에서 완벽한 업무 공간을 찾아가세요!
+            <hr style="border: black;">
+        </p>
+        <div class = search_all>
+            <input type="text" class = "search_bar" style="width: 530px; height: 35px;" value="  검색어를 입력하세요">
+            <button type="button" class = "search_but" style="width: 270px; height: 35px;" onclick="searchbutton()">S E A R C H</button>
+        </div>
+    </section>
+    <div class="eventWrap">
+            <ul>
+                <li class="depth01"><a href="/m/board.html?code=akiiikr_board7" class="cateMenu">뉴스이벤트</a></li>
+                <li class="depth01 open">
+                    <a href="#" class="cateMenu">커뮤니티<i class="xi-plus-thin"></i></a>
+                    <ul class="depth02">
+                        <li><a href="/m/board.html?code=akiiikr_board7">이벤트/기획전</a></li>
+                        <li><a href="/m/board.html?code=akiiikr_board2">문의게시판</a></li>
+                        <li><a href="/m/board.html?code=akiiikr_board5&page=&board_cate=&review_type=gallery">포토후기</a></li>
+                    </ul>
+                </li>
+        
+         
+        
+        <div class="lastWrap">
+            <div class="lastInner">
+                <h5>최근 본 오피스</h5>
+                                    <p class="bold" style="text-align:center;">최근 조회하신 오피스가 없습니다.</p>
+                            </div>
+            
+        </div>
+
+
+<script type="text/javascript" src="/shopimages/akiiikr/template/work/24238/header.1.js?t=202111020851"></script>
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="review-board-list">
+            <div class="h_title">
+                <h3>
+                    문의하기
+                </h3>
+            </div>
+            <div class="csInfoWrap">
+                <div class="csInfoTop">
+                    <div class="fleft">
+                        <p class="tel">1234-1234</p>
+                        <p class="infoText">
+                            평일 10:00~17:30<br />
+                            점심 12:00~13:00<br />
+                            토-일요일, 공휴일 휴무 
+                        </p>
+                    </div>
+                    <div class="fright">
+                        <a href="tel:1600-1279"><img src="/design/akiiikr/phps/m/qna_cs_btn01.png" alt="전화연결"></a>
+                        <a href="#"><img src="/design/akiiikr/phps/m/qna_cs_btn02.png" alt="카카오톡 상담"></a>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- 검색 -->
+            <div class="search-wrap">
+                <form action="board.html" name="form1">
+    <input type=hidden name=s_id value="">
+    <input type=hidden name=code value="akiiikr_board2">
+    <input type=hidden name=page value=1>
+    <input type=hidden name=type value=s>
+    <input type=hidden name=board_cate value="">
+    <input type=hidden name="review_type" value="" />                <fieldset>
+                <div class="item-search clearFix">
+                    <div>
+                                    <select name="search_type" class="brd-st">                <option value="hname">이름</option>
+<option value="subject">제목</option>
+<option value="content">내용</option>
+
+            </select>                    </div>
+                    <div>
+                        <input type='text' name='stext' value=''  class="MS_input_txt txt-input1" />                        <a href="javascript:document.form1.submit();" class="searchBtn"><i class="xi-search"></i></a>
+                    </div>
+                </div>
+                </fieldset>
+                </form>            </div>
+            <!-- //검색 -->
+            <div class="pd10">
+            <!-- 공지글 -->
+            <div class="notice" id="notice">
+                                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span class="bgc464644">[공지]</span> 오피스 변경은 시설 확인 후 변경 진행하여 시일 소요됩니다.                        </dt>
+                    </dl>
+                </div>
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span>이벤트</span>
+                            
+                        </dt>
+                        <dd>
+                            <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=922082&num2=00000&number=100498&lock=N&flag=notice">
+                                [오피스 1일 무료 이용 이벤트.]
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span>이벤트</span>
+                            
+                        </dt>
+                        <dd>
+                            <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=922082&num2=00000&number=100498&lock=N&flag=notice">
+                                [2021년도 고객 설문조사 및 경품 추첨.]
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span>이벤트</span>
+                            
+                        </dt>
+                        <dd>
+                            <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=922082&num2=00000&number=100498&lock=N&flag=notice">
+                                [엔터프라이즈365 솔루션 신청 기회.]
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span>공지</span>
+                            
+                        </dt>
+                        <dd>
+                            <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=909179&num2=00000&number=100501&lock=N&flag=notice">
+                                [답변은 17시30분 문의 건 까지 입니다.]
+                                                           
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span>공지</span>
+                            
+                        </dt>
+                        <dd>
+                            <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=922082&num2=00000&number=100498&lock=N&flag=notice">
+                    [답변완료 된 문의글에 댓글로 재문의건은 확인불가로 문의사항은 새문의글로 접수 부탁드립니다.]
+                       </a>
+                    </dd>
+                    </dl>
+                </div>
+                </div>
+            <!-- //공지글 -->
+            <ul class="boardList">
+                 <li>
+                 <dl>
+                                                                                                                       
+                 <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=897700&num2=00000&number=100511&lock=Y">
+                 <dt>
+                 <nobr>
+                 <i class="xi-lock-o"></i>         
+                 기타 문의드립니다.                                                                                                                                                                            <span class="bl_iconNew">N</span>
+                 </nobr>
+                 </dt>
+                 <dd>
+                 <span class="bl_name">
+                 김구*</span><span class="bar">|</span>2021.12.02                        </dd>
+                 </a>
+                 </dl>
+                 </li>
+                 <li>
+                 <dl>
+                                                                                                                       
+                 <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=897701&num2=00000&number=100510&lock=Y">
+                 <dt>
+                 <nobr>
+                 <i class="xi-lock-o"></i>         
+                 오피스 문의드립니다.                                                                                                                                                                            <span class="bl_iconNew">N</span>
+                 </nobr>
+                 </dt>
+                 <dd>
+                 <span class="bl_name">
+                 최용*</span><span class="bar">|</span>2021.12.02                        </dd>
+                 </a>
+                 </dl>
+                 </li>
+                 <li>
+                 <dl>
+                                                                                                                       
+                 <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=897702&num2=00000&number=100509&lock=Y">
+                 <dt>
+                 <nobr>
+                 <i class="xi-lock-o"></i>         
+                 기타 문의드립니다.                                                                                                                                                                            <span class="bl_iconNew">N</span>
+                 </nobr>
+                 </dt>
+                 <dd>
+                 <span class="bl_name">
+                 어경*</span><span class="bar">|</span>2021.12.02                        </dd>
+                 </a>
+                 </dl>
+                 </li>
+                 <li>
+                 <dl>
+                                                                                                                       
+                 <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=897703&num2=00000&number=100508&lock=Y">
+                 <dt>
+                 <nobr>
+                 <i class="xi-lock-o"></i>         
+                 기타 문의드립니다.                                                                                                                                                                            <span class="bl_iconNew">N</span>
+                 </nobr>
+                 </dt>
+                 <dd>
+                 <span class="bl_name">
+                 한명*</span><span class="bar">|</span>2021.12.02                        </dd>
+                 </a>
+                 </dl>
+                 </li>
+                 <li>
+                 <dl>
+                                                                                                                                                               
+                 <a href="/m/board.html?code=akiiikr_board2&page=1&type=v&board_cate=&num1=897703&num2=00000&number=100508&lock=Y">
+                 <dt>
+                 <nobr>
+                 <i class="xi-lock-o"></i>         
+                 변경 문의드립니다.                                                                                                                                                                            <span class="bl_iconNew">N</span>
+                 </nobr>
+                 </dt>
+                 <dd>
+                 <span class="bl_name">
+                 손성*</span><span class="bar">|</span>2021.12.02                        </dd>
+                                                </a>
+                                            </dl>
+                </li>
+                                <li>
+                         <dl>
+                </li>
+                <div class="boardWrite">
+                <a href="/m/board.html?code=akiiikr_board2&page=1&board_cate=&type=i" class="btn_Red">문의하기</a>
+            </div>
+                        <div class="paging">
+                        <a href="javascript:return false;" class="now">1</a>
+                        <a href="/m/board.html?code=akiiikr_board2&page=2&board_cate=#board_list_target">2</a>
+                        <a href="/m/board.html?code=akiiikr_board2&page=6&board_cate=#board_list_target"><i class="xi-angle-right-thin"></i></a>
+                            </div>
+            </div>
+    <footer class = "footer">
+        <div class = "footer_content">
+            <img src="./img/footerlogo.png" alt="logo" class = "footer_logo">
+        <div class="footer_word">
+        <table>
+            <tr>
+                <th>센터</th>
+                <th>플랜</th>
+                <th>커뮤니티</th>
+                <th>About</th>
+            </tr>
+            <tr>
+                <td>찾아오시는 길</td>
+                <td><a href="./plan.html#plan">솔루션</a> </td>
+                <td>스토리</td>
+                <td><a href="./about.html#ent">엔터프라이즈</a></td>
+            </tr>
+            <tr>
+                <td>상담문의</td>
+                <td><a href="./plan.html#adv">멤버 혜택</a></td>
+                <td>이벤트</td>
+                <td><a href="./about.html#sol">맞춤형 솔루션</a></td>
+            </tr>
+            <tr>
+                <td>공유 오피스</td>
+                <td><a href="./plan.html#exm">성공사례</a> </td>
+                <td>멤버 프로모션</td>
+                <td><a href="./about.html#co">코워킹</a></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        function openRightMenu() {
+            document.getElementById("rightMenu").style.display = "block";
+        }
+
+        function closeRightMenu() {
+            document.getElementById("rightMenu").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
