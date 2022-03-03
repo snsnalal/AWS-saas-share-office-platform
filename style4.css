@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+    font-family: "돋움",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 5px 30px 10px 0px;
+    padding: 5px 30px 0px 0px;
+    position:sticky;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    margin: 8px 15px;
+    padding-left: 50px;
+    color: white;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 10px;
+}
+
+.navbar_menu span{
+    padding: 8px 30px;
+    font-size: 15px;
+    color: black;
+}
+
+.navbar_but{
+    margin-left: 50px;
+    padding : 0px 20px;
+    border: 1px solid #38a7ef;
+    background-color: white;
+    color: #38a7ef;
+    border-radius: 10px;
+}
+
+.navbar_but:hover{
+    color:white;
+    background-color: #38a7ef;
+}
+
+
+
+
+.footer{
+    background-color: rgb(15, 15, 15);
+}
+
+.footer_logo{
+    width: 300px;
+    height: 60px;
+    float: left;
+    margin: 8px 15px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 250px 50px;
+    position:sticky;
+}
+
+.footer_word table{
+    color: rgb(177, 174, 174);
+    float: right;
+    text-align: center;
+
+    padding-right: 250px;
+}
+
+.footer_word tr{
+    color: rgb(92, 92, 92);
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.footer_word th{
+    font-size: 20px;
+    color: gray;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
